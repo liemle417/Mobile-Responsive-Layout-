@@ -1,0 +1,320 @@
+*{
+  box-sizing: border-box;
+}
+.body{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.clearfix::after{
+  content:"";
+  display: table;
+  clear: both;  
+}
+  
+
+/*========================================================
+LAYOUT THE WRAPPER 320px
+==========================================================*/
+
+/*Style the header*/
+nav{
+  background-color: #f2f2f2;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.navtop{
+  text-align: center;
+  padding: 20px;
+}
+
+/*Customize the navigation*/
+nav > div{
+  background-color: #f2f2f2;
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-size: 1.4em;
+  padding: 25px ;
+  text-align: center;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+
+nav a:hover{
+  color: palevioletred;
+  text-transform: uppercase; /*Extra Stuff*/
+  font-size: 1.5em;
+}
+
+.main-nav {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 auto;  
+  padding:0 auto;
+  list-style-type: none;
+  background-color: #f2f2f2;
+  display: inline;
+}
+
+.main-nav a {
+  text-align: center;
+  display: block;
+  margin: 0 25px 5px 25px;
+  padding: 25px 0 15px 0;
+  background-color: white;
+}
+
+/*Style the navigation links to be pinky*/
+.main-nav a{
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav a:link, a:visited {
+  color: black;
+}
+
+/*Make the profile image in the center*/
+.profile img{
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Style the content in the profile section*/
+.profile{
+  background-color: #f2f2f2;
+  margin: 0 20px;
+  padding: 20px 25px 20px 25px;
+  font-family: "BenchNine";
+  font-size: 1.3em;
+  font-weight: lighter;
+  line-height: 1.3;
+}
+
+.middle{
+  background-color: #f2f2f2;
+  margin: 0 20px;
+}
+
+/*Style the Portfolio*/
+
+.flex{
+  display: flex;
+  background-color: white;
+  margin: 0 25px;
+  padding: 25px 15px 0 15px;
+  flex-wrap: wrap;
+}
+
+.name-portfolio{
+  font-weight: bold;
+  text-align: center;
+  padding: 25px 0 35px 0;
+  margin: 0 10px;
+}
+
+div img{
+  width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-title{
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
+.project-content{
+  margin: 20px 25px 10px 25px;
+  padding: 5px 65px 35px 65px;
+  text-align: center;
+  font-family: "BenchNine";
+  font-size: 1.2em;
+  font-weight: lighter;
+  line-height: 1.3;
+}
+
+.contact{
+  background-color: #f2f2f2;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  font-family: "BenchNine", Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: lighter;
+  margin: 0 20px;
+}
+
+.contact-title{
+  padding: 20px 10px 20px 10px;
+}
+
+.contact a{
+  font-weight: bold;
+  white-space: 2em;
+  margin-top: 50px;
+  text-decoration: none;
+  color: black;
+  padding-left: 20px;
+}
+
+.contact a:hover{
+  color: cornflowerblue;
+  font-size: 1.3em;
+}
+
+
+/*Hidden some bottom navigation*/
+.nav-footer .sub{
+  display: none;
+}
+
+.navbar {
+  margin: 0 20px;
+  background-color: #f2f2f2;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item-sub a,
+.nav-item-top a {
+  display: inline-block;
+  padding: 0px 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-item-sub:hover a,
+.nav-item-top:hover a {
+  color: palevioletred;
+  font-weight: bold;
+}
+
+.nav-item-sub{
+  display: none;
+}
+
+/*========================================================
+RESPONSIVE
+==========================================================*/
+@media(min-width: 768px){
+   /*Make the top navigation bar on the center using inline and inline-block*/
+  .main-nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:0;
+    padding: 0;  
+   }
+
+  .main-nav a{
+    margin: 0;
+    padding: 15px;
+    font-size: 0.8em;
+    background-color: #f2f2f2;
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  .main-nav a:hover{
+    color: palevioletred;
+    font-size: 1.2em;
+    font-family: "Bangers", Helvetica, Arial, sans-serif;
+  }
+
+  /*Profile content and Profile picture*/
+  .profile{
+    display: flex;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+  }
+
+  .profile .primary-col{
+    flex: 60%;
+    order: 1;
+    padding: 5px 15px;
+    text-align: left;
+  }
+
+  .profile .secondary-col{
+    flex: 40%;
+    order: 2;
+  }
+  
+
+  /*Style Portfolio*/
+  img[title="adjust-image"]{
+    width: 95%;
+  }
+
+  .card-project{
+    width: 50%;
+    justify-content: center;
+  }  
+
+  /*Hidden the "Back to Top" button*/
+  .navbar .nav-item-top{
+    display: none;
+  }
+
+  .navbar .nav-item-sub{
+    display: flex;
+  }
+}
+
+@media(min-width: 1024px){
+  .navtop {
+    margin: 0 20px;
+    background-color: #f2f2f2;
+    padding:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-nav {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-top-nav a {
+    display: inline-block;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .nav-top-nav:hover a {
+    color: palevioletred;
+    font-weight: bold;
+  }
+
+  .card-project{
+    width: 33.33%;
+  }
+}
