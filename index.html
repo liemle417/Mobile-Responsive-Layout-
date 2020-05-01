@@ -5,7 +5,6 @@
         <title>Project 2: Mobile-first Responsive Layout</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Cambay" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=BenchNine:300,400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
@@ -17,6 +16,7 @@
             <ul class="main-nav">
               <li class="item-top-nav"><a href="index.html">HOME</a></li>
               <li class="item-top-nav"><a href="#project">PORTFOLIO</a></li>
+              <li class="item-top-nav"><a href="#skill">SKILL</a></li>
               <li class="item-top-nav"><a href="#info">CONTACT</a></li>
             </ul>
         </nav>
@@ -26,10 +26,10 @@
             <p class="primary-col">Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
         </div>
         
-        <div class="middle">
+        <div id="project" class="middle">
         <h3 class="name-portfolio">PORTFOLIO</h3>
 
-        <div id="#project" class="flex">                     
+        <div class="flex">                     
             <div class="card-project">
                 <img src="images/portfolio-1.png" title="adjust-image" alt="Portfolio 1" />
                 <p class="project-title">Marketing Page</p>
@@ -68,7 +68,57 @@
         </div>
         </div>
 
-        <div id=#info class="contact">
+        <div id="skill" class="knowledge">
+            <h3 class ="skill-title">Skill</h3>
+            
+            <div class="skill-intro">
+                <div class="skill-column">
+                    <a href = "https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                        <img src="images/html-5-icon.png" title="HTML" alt="HTML 5 Icon">
+                        <figcaption>HTML5</figcaption>
+                    </a>
+                </div>
+
+                <div class="skill-column">
+                    <a href = "https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                        <img src="images/css-3-icon.png" title="CSS" alt="CSS 3 Icon">
+                        <figcaption>CSS3</figcaption>
+                    </a>
+                </div>
+
+                <div class="skill-column">
+                    <a href = "https://getbootstrap.com/" target="_blank">
+                        <img src="images/bootstrap-icon.png" title="Bootstrap" alt="Boostrap 4 Icon">
+                        <figcaption>Boostrap 4</figcaption>
+                    </a>
+                </div>
+
+                <div class="skill-column">
+                    <a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                        <img src="images/javascript-icon.png" title="JavaScript" alt="JavaScript Icon">
+                        <figcaption>JavaScript</figcaption>
+                    </a>
+                </div>
+
+                <div class="skill-column">
+                    <a href = "https://www.python.org/" target="_blank">
+                        <img src="images/python-icon.png" title="Python" alt="Python Icon">
+                        <figcaption title="style-python">Python</figcaption>
+                    </a>  
+                </div>  
+
+                <div class="skill-column">
+                    <a href = "https://reactjs.org/" target="_blank">
+                        <img src="images/react-icon.png" title="React" alt="React Icon">
+                        <figcaption title="style-jquery">React</figcaption>
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+        </div>  
+
+        <div id="info" class="contact">
             <h3 class ="contact-title">Contact</h3>
             <p class="contact-intro">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
             <p>Phone <a>+1(111) 555-1234</a></p>
