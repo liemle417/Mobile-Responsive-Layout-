@@ -163,11 +163,10 @@ div img{
 
 .skill-intro{
   display:flex;
+  flex:1;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 30px;
-  padding: 30px;
 }
 
 /*Extra Stuff*/
