@@ -137,7 +137,7 @@ div img{
 
 .project-content{
   margin: 20px 25px 10px 25px;
-  padding: 5px 65px 35px 65px;
+  padding: 5px 5px 20px 5px;
   text-align: center;
   font-family: "BenchNine";
   font-size: 1.2em;
@@ -177,7 +177,7 @@ div img{
   transform: scale(1.2);
 }
 
-figcaption{
+.skill-name{
   margin: 10px;
   padding: 10px;
 }
@@ -198,7 +198,6 @@ figcaption{
 .skill-column img{
   margin-left: auto;
   margin-right: auto;
-
   flex:50%;
 }
 
@@ -309,6 +308,8 @@ RESPONSIVE
   
 
   /*Style Portfolio*/
+  
+  /*CSS attribute selector*/
   img[title="adjust-image"]{
     width: 95%;
   }
@@ -320,9 +321,12 @@ RESPONSIVE
 
   /*Style Skill*/
   .skill-intro{
-    flex:1; 
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .skill-column{
+    display: flex;
   }
 
   .skill-column:hover{
